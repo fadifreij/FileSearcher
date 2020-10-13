@@ -30,10 +30,10 @@
         {
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_FolderName = new System.Windows.Forms.TextBox();
+            this.txt_ResutBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_wordToSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,21 +48,22 @@
             this.button1.Text = "Select Folder";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_FolderName
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(716, 23);
-            this.textBox1.TabIndex = 1;
+            this.txt_FolderName.Location = new System.Drawing.Point(31, 27);
+            this.txt_FolderName.Name = "txt_FolderName";
+            this.txt_FolderName.Size = new System.Drawing.Size(716, 23);
+            this.txt_FolderName.TabIndex = 1;
+            this.txt_FolderName.Text = "C:\\Users\\f.freij\\Desktop\\SearcherProject\\Master";
             // 
-            // textBox2
+            // txt_ResutBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 116);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(866, 378);
-            this.textBox2.TabIndex = 1;
+            this.txt_ResutBox.Location = new System.Drawing.Point(31, 116);
+            this.txt_ResutBox.Multiline = true;
+            this.txt_ResutBox.Name = "txt_ResutBox";
+            this.txt_ResutBox.ReadOnly = true;
+            this.txt_ResutBox.Size = new System.Drawing.Size(866, 378);
+            this.txt_ResutBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -73,12 +74,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Folder Path";
             // 
-            // textBox3
+            // txt_wordToSearch
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 56);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(581, 23);
-            this.textBox3.TabIndex = 1;
+            this.txt_wordToSearch.Location = new System.Drawing.Point(166, 56);
+            this.txt_wordToSearch.Name = "txt_wordToSearch";
+            this.txt_wordToSearch.Size = new System.Drawing.Size(581, 23);
+            this.txt_wordToSearch.TabIndex = 1;
+            this.txt_wordToSearch.Text = "hi";
             // 
             // label2
             // 
@@ -97,6 +99,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -115,10 +118,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_wordToSearch);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_ResutBox);
+            this.Controls.Add(this.txt_FolderName);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -134,10 +137,10 @@
 
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_FolderName;
+        private System.Windows.Forms.TextBox txt_ResutBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_wordToSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
